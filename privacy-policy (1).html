@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>API Diff Privacy Policy</title>
+<style>
+  body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #202124; max-width: 740px; margin: 40px auto; padding: 0 20px; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 19px; margin-top: 30px; }
+  li { margin-bottom: 8px; }
+  @media (prefers-color-scheme: dark) { body { background: #202124; color: #e8eaed; } }
+</style>
+</head>
+<body>
+<h1>API Diff Privacy Policy</h1>
+<p>Last updated: 26 Oct 2026</p>
+<h2>1. What API Diff does</h2>
+<p>API Diff is a Chrome extension for developers. It adds an &quot;API Diff&quot; tab to Chrome DevTools. It compares an API&#x27;s JSON response with a baseline you saved earlier and shows what changed.</p>
+<h2>2. What information it handles</h2>
+<ul>
+  <li><b>The network requests of the page you are inspecting:</b> the address (URL) and method of each request, its status, and its response. This is web browsing activity and website content. It is read only while the DevTools panel is open and, if you turn on the optional "page capture", on the sites you chose.</li>
+  <li><b>Responses are read to find JSON data.</b> Responses that are not JSON are looked at only to decide that, and are discarded straight away.</li>
+  <li><b>Request bodies</b> are read only to recognise the name of a GraphQL operation. They are not saved.</li>
+  <li>API Diff does not read or store your cookies, passwords, form contents or request headers. The only header it uses is the response's content type.</li>
+</ul>
+<h2>3. Where it is stored</h2>
+<ul>
+  <li><b>Baselines</b> (the responses you choose to save) and <b>your settings</b> are stored in your browser's local extension storage, on your own device. They are not synced to other devices and are not sent anywhere. They are stored unencrypted.</li>
+  <li>Everything else (the list of captured calls, earlier calls kept for the "vs previous call" view, and the list of skipped requests) is held in memory only and is discarded when you close DevTools or reload the panel.</li>
+  <li>An API response can contain any kind of data, including personal data. A baseline you save contains whatever that response contained. Avoid saving baselines of sensitive responses on a shared computer, and delete them when you no longer need them.</li>
+</ul>
+<h2>4. What API Diff does not do</h2>
+<ul>
+  <li>It makes no network requests of its own. The comparison runs on your device.</li>
+  <li>It has no servers, no accounts, no analytics, no advertising and no tracking.</li>
+  <li>We do not collect, sell, share or transfer your data to anyone. The developer cannot see it.</li>
+</ul>
+<h2>5. Permissions, and why they are needed</h2>
+<ul>
+  <li><b>storage</b> and <b>unlimitedStorage</b>: to save your baselines and settings on your device. A baseline is a full API response and can be large.</li>
+  <li><b>scripting</b>, <b>activeTab</b> and <b>optional access to websites</b>: only for the optional page capture. The extension has no access to any website when you install it. When you click "Turn on for this site" in the toolbar popup, Chrome asks you to allow access to that site (or domain) only. You can turn it off again at any time.</li>
+  <li><b>Clipboard</b>: only when you click "Copy diff as Markdown", the text of the comparison is placed on your clipboard.</li>
+</ul>
+<h2>6. Your control</h2>
+<ul>
+  <li>Delete a single baseline with "Clear baseline", or all of them with "Clear all baselines".</li>
+  <li>"Clear captured" empties the list of captured calls.</li>
+  <li>Turn off page capture for a site in the toolbar popup, or on chrome://extensions.</li>
+  <li>Uninstalling the extension deletes everything it stored.</li>
+</ul>
+<h2>7. Limited Use</h2>
+<p>The use of information received from web pages by API Diff adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements. In particular:</p>
+<ul>
+  <li>The information is used only to provide the extension's single purpose: comparing an API response with a saved baseline.</li>
+  <li>It is not transferred to anyone. (Nothing leaves your device.)</li>
+  <li>It is never used for advertising, including personalised or interest-based advertising.</li>
+  <li>No person reads it. It is not used to determine creditworthiness or for lending.</li>
+</ul>
+<h2>8. Changes to this policy</h2>
+<p>If this policy changes, the new version will be posted at this address with a new date.</p>
+<h2>9. Contact</h2>
+<p>Uday Kiran, <a href="mailto:udaykiranmuni@gmail.com">udaykiranmuni@gmail.com</a></p>
+</body>
+</html>
